@@ -8,7 +8,7 @@ const Highlights = () => {
   const [highlightsData, setHighlightsData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const endpoint = "http://localhost:8000/highlights";
+      const endpoint = "https://store-tct9.onrender.com/highlights";
       try {
         const data = await getData(endpoint);
         setHighlightsData(data);

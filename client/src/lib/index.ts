@@ -22,6 +22,6 @@ export const getData = async (endpoint: string) => {
 };
 
 export const getProducts = async () => {
-  const products = await axios.get("http://localhost:8000/products");
+  const products = await axios.get("https://store-tct9.onrender.com/products");
   return products;
 };

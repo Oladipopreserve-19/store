@@ -25,8 +25,8 @@ const Product = () => {
   const { id } = useParams();
 
   const endpoint = id
-    ? `http://localhost:8000/products/${id}`
-    : "http://localhost:8000/products/";
+    ? `https://store-tct9.onrender.com/products/${id}`
+    : "https://store-tct9.onrender.com/products/";
   useEffect(() => {
     const fetchData = async () => {
       try {

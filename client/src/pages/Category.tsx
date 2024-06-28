@@ -14,7 +14,7 @@ const Category = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const endpoint = `http://localhost:8000/categories/${id}`;
+      const endpoint = `https://store-tct9.onrender.com/categories/${id}`;
       try {
         setLoading(true);
         const data = await getData(endpoint);

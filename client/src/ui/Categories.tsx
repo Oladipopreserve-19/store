@@ -10,7 +10,7 @@ const Categories = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const endpoint = "http://localhost:8000/categories";
+      const endpoint = "https://store-tct9.onrender.com/categories";
       try {
         const data = await getData(endpoint);
         setCategories(data);

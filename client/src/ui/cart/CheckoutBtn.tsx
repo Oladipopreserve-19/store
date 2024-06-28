@@ -15,7 +15,7 @@ const CheckoutBtn = ({ products, totalAmt }: Props) => {
   const handleCheckout = async () => {
     const stripe = await stripePromise;
 
-    const response = await fetch("http://localhost:8000/checkout", {
+    const response = await fetch("https://store-tct9.onrender.com/checkout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
